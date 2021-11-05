@@ -35,6 +35,20 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+/* Утилиты */
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  text-decoration: none;
+}
 
 /* Logo */
 .main-nav .logo {
@@ -57,8 +71,6 @@
 /* Site nav */
 .list {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .main-nav {
@@ -114,6 +126,7 @@
 }
 .link-adress {
   color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.17;
@@ -142,15 +155,11 @@
   line-height: 1.17;
   letter-spacing: 0.06em;
   text-align: center;
-
-  margin-bottom: 30px;
-  margin-top: 0;
+  text-transform: uppercase;
 }
 .hero {
   background-color: var(--footer-color);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 /* Button */
@@ -173,18 +182,12 @@
 }
 
 /* Преимущества */
-.advantage {
-  padding-bottom: 0;
-}
 
 .advantage-list .tittle {
   color: var(--tittle-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
-
-  margin-top: 0;
-  margin-bottom: 10;
 }
 
 .advantage .description {
@@ -192,9 +195,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-
-  margin-top: 0;
-  margin-bottom: 0;
 }
 .advantage-list {
   display: flex;
@@ -207,9 +207,6 @@
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-
-  margin-top: 0;
-  margin-bottom: 50px;
 }
 .products .list {
   display: flex;
@@ -236,23 +233,13 @@
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-
-  margin-top: 0;
-  margin-bottom: 50px;
 }
 
-.team-member {
-  margin-top: 0;
-  margin-bottom: 30px;
-}
 .member-name {
   color: var(--tittle-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.17;
-
-  margin-top: 0;
-  margin-bottom: 10px;
 }
 .position {
   color: var(--primary-text-color);
@@ -304,6 +291,9 @@
 /* Страница Портфолио */
 
 /* Фильтр */
+.project-item {
+  text-decoration: none;
+}
 
 .btn-filter {
   list-style: none;
@@ -346,15 +336,11 @@ button:focus {
 
 /* Проекты */
 
-.project {
-  margin-top: 0;
-  margin-bottom: 0;
-}
 .project-item {
   text-decoration: none;
 }
 
-.project .list {
+.section .project {
   display: flex;
   flex-wrap: wrap;
 }
@@ -363,10 +349,6 @@ button:focus {
   padding-bottom: 24px;
   border-bottom: 1px solid #eeeeee;
   box-sizing: border-box;
-  margin-bottom: 30px;
-
-  width: 370px;
-  margin-right: 30px;
 }
 
 .project-list:nth-child(3n) {
@@ -382,18 +364,10 @@ button:focus {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-
-  margin-top: 20px;
-  margin-bottom: 4px;
-  padding: 0 24px;
 }
 
 .filter-name {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
-
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0 24px;
 }
