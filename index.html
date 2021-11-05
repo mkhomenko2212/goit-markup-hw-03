@@ -5,47 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="./css/styles.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-		rel="stylesheet">
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css" />
+    <link href="./css/styles.css" rel="stylesheet"/>
+    
 </head>
 <body>
     <!--Шапка сайта-->
-    <header> 
-        <nav class="conteiner">
-        <a href="" class="logo"> <span class="logo-first ">Web</span><span class="logo-second">Studio</span> </a>
-            <ul class="site-nav list">
-              <li> <a href="" class="link current">Студия</a></li>
-                <li> <a href="./portfolio.html" class="link">Портфолио</a></li>
-                <li> <a href="" class="link">Контакты</a></li>
+    <header>
+        <div class="container main-nav">
+            <a href="./index.html" class="logo"> <span class="logo-first ">Web</span><span class="logo-second">Studio</span> </a>
+            <nav>
+                <ul class="site-nav list">
+                    <li class="item"> <a href="./index.html" class="link current">Студия</a></li>
+                    <li class="item"> <a href="./portfolio.html" class="link ">Портфолио</a></li>
+                    <li class="item"> <a href="" class="link">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class=" section adress list">
+                <li class="item"><a href="mailto:info@devstudio.com" class="link-adress">info@devstudio.com </a></li>
+                <li class="item"><a href="tel:+380961111111" class="link-adress"> +38 096 111 11 11 </a></li>
             </ul>
-        </nav>
-        <ul class=" section adress list">
-         <li><a href="mailto:info@devstudio.com" class="link-adress">info@devstudio.com </a></li>
-         <li><a href="tel:+380961111111" class="link-adress"> +38 096 111 11 11 </a></li>
-        </ul> 
+        </div>
     </header>
     <section class="section hero"> 
         <div class="container">
         <h1 class="hero-tittle">Эффективные решения <br/> для вашего бизнеса</h1>
-        <button type="button" class="button">Заказать услугу</button>
+        <button type="button" class="main-button">Заказать услугу</button>
+        </div>
     </section>
     <section class="section advantage">
+        <div class="container">
         <h2 hidden class="advantage-tittle">Наши преимущества</h2>
     <ul class="advantage-list list">
-        <li>
+        <li class="item">
             <h3 class="tittle">Внимание к деталям</h3>
             <p class="description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
         </li>
-        <li>
+        <li class="item">
             <h3 class="tittle">Пунктуальность</h3>
             <p class="description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
         </li>
-        <li>
+        <li class="item">
             <h3 class="tittle">Планирование</h3>
             <p class="description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
         </li>
-        <li>
+        <li class="item">
             <h3 class="tittle">Современные технологии</h3>
             <p class="description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
         </li>
@@ -56,9 +62,9 @@
         <div class="container">
         <h2 class="products-tittle">Чем мы занимаемся</h2>
         <ul class="list">
-            <li><img src="./images/Box1.jpg" alt="Десктопные приложения" width="370"/> </li>
-            <li><img src="./images/Box2.jpg" alt="Дизайнерские решения" width="370"/> </li>
-            <li><img src="./images/Box3.jpg" alt="Мобильные приложения" width="370"/> </li>
+            <li class="item"><img src="./images/Box1.jpg" alt="Десктопные приложения" width="370"/> </li>
+            <li class="item"><img src="./images/Box2.jpg" alt="Дизайнерские решения" width="370"/> </li>
+            <li class="item"><img src="./images/Box3.jpg" alt="Мобильные приложения" width="370"/> </li>
         </ul>
         </div>
     </section>
@@ -66,16 +72,17 @@
         <div class="container">
         <h2 class="team-tittle">Наша команда</h2>
         <ul class="team-member list">
-        <li><img src="./images/teamcard1.jpg" alt="Product Designer" width="270">   <h3 class="member-name"> Игорь Демьяненко </h3>  <p class="position">Product Designer</p> </li>
-        <li><img src="./images/teamcard2.jpg" alt="Frontend Developer" width="270"> <h3 class="member-name">Ольга Репина</h3>  <p class="position">Frontend Developer</p> </li>
-        <li><img src="./images/teamcard3.jpg" alt="Marketing" width="270">   <h3 class="member-name"> Николай Тарасов</h3>  <p class="position">Marketing</p></li>
-        <li><img src="./images/teamcard4.jpg" alt="UI Designer" width="270">  <h3 class="member-name"> Михаил Ермаков</h3> <p class="position">UI Designer</p> </li>
+        <li class="item"><img src="./images/teamcard1.jpg" alt="Product Designer" width="270">   <h3 class="member-name"> Игорь Демьяненко </h3>  <p class="position">Product Designer</p> </li>
+        <li class="item"><img src="./images/teamcard2.jpg" alt="Frontend Developer" width="270"> <h3 class="member-name">Ольга Репина</h3>  <p class="position">Frontend Developer</p> </li>
+        <li class="item"><img src="./images/teamcard3.jpg" alt="Marketing" width="270">   <h3 class="member-name"> Николай Тарасов</h3>  <p class="position">Marketing</p></li>
+        <li class="item"><img src="./images/teamcard4.jpg" alt="UI Designer" width="270">  <h3 class="member-name"> Михаил Ермаков</h3> <p class="position">UI Designer</p> </li>
         </ul>
         </div>
     </section>
 <!--Подвал-->
     <footer class="page-footer">
-        <a href="" class="logo"> <span class="logo-first ">Web</span><span class="logo-second">Studio</span></a>
+        <div class="container">
+        <a href="./index.html" class="logo"> <span class="logo-first ">Web</span><span class="logo-second">Studio</span></a>
         <address class="adress-list"> 
             <ul class="list"> 
                 <li> <a href="" class="link-adress"> г. Киев, пр-т Леси Украинки, 26 </a></li>
@@ -83,6 +90,7 @@
                 <li> <a href="tel:+380991111111" class="contact link-adress">+38 099 111 11 11</a> </li>
             </ul>
         </address>
+        </div>
     </footer> 
 </body>
 </html>
