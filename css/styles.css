@@ -27,6 +27,8 @@
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .container {
   margin-left: auto;
@@ -51,7 +53,7 @@ ul {
 }
 
 header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 /* Logo */
 .main-nav .logo {
@@ -93,8 +95,12 @@ header {
   letter-spacing: 0.02em;
 }
 
-.site-nav .item,
-.adress .item {
+.main-nav .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.main-nav .link-adress {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -159,10 +165,14 @@ header {
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
+
+  margin-bottom: 30px;
 }
 .hero {
   background-color: var(--footer-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 /* Button */
@@ -186,6 +196,13 @@ header {
 
 /* Преимущества */
 
+.advantage {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 94px;
+  margin-bottom: 106px;
+}
+
 .advantage-list .tittle {
   color: var(--tittle-color);
   font-weight: 700;
@@ -203,11 +220,17 @@ header {
   display: flex;
 }
 
-.advantage .item + .item {
+.advantage-list .item + .item {
   margin-left: 30px;
 }
 
 /* Чем мы занимаемся */
+
+.products {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 82px;
+}
 
 .products-tittle {
   color: var(--tittle-color);
@@ -215,6 +238,8 @@ header {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+
+  padding-bottom: 50px;
 }
 .products .list {
   display: flex;
@@ -241,6 +266,8 @@ header {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+
+  padding-bottom: 50px;
 }
 
 .member-name {
@@ -248,6 +275,9 @@ header {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.17;
+
+  text-align: center;
+  padding-top: 30px;
 }
 .position {
   color: var(--primary-text-color);
@@ -255,7 +285,9 @@ header {
   line-height: 1.17;
 
   margin-top: 0px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
+  padding-top: 10px;
+  text-align: center;
 }
 
 .team-member .item {
@@ -266,6 +298,8 @@ header {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  padding-bottom: 30px;
 }
 
 /* Подвал */
@@ -291,7 +325,7 @@ header {
   color: var(--primary-white-color);
 }
 
-.page-footer .container {
+.page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -318,7 +352,7 @@ header {
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
-  padding: 0;
+  padding-bottom: 50px;
 
   display: flex;
   justify-content: center;
@@ -339,10 +373,12 @@ header {
   padding: 6px 22px;
   min-width: 73px;
   text-align: center;
+  border: 1px solid transparent;
 }
 .btn-filter .button:hover,
 button:focus {
   color: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
 .btn-filter .button.active {
   background-color: var(--accent-color);
@@ -368,7 +404,9 @@ button:focus {
   padding-bottom: 24px;
   border-bottom: 1px solid #eeeeee;
   box-sizing: border-box;
-  background-color: hotpink;
+
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .project-list:nth-child(3n) {
@@ -384,10 +422,16 @@ button:focus {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 4px;
 }
 
 .filter-name {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
+
+  padding-left: 24px;
 }
