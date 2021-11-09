@@ -228,7 +228,6 @@ header {
 
 .products {
   padding-top: 0;
-
 }
 
 .products-tittle {
@@ -423,7 +422,7 @@ button:focus {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 24px;
-
+}
 .filter-name {
   color: var(--primary-text-color);
   font-size: 16px;
