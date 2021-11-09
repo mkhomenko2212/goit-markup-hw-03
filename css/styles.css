@@ -380,7 +380,7 @@ button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
-.btn-filter .button.active {
+.btn-filter {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
