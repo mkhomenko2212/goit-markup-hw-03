@@ -411,6 +411,7 @@ button:focus {
 }
 .project-name {
   color: var(--tittle-color);
+  font-family: Roboto;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
