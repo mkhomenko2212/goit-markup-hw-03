@@ -55,6 +55,12 @@ ul {
 header {
   border-bottom: 1px solid #ececec;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /* Logo */
 .main-nav .logo {
   font-family: Raleway, sans-serif;
@@ -81,7 +87,7 @@ header {
 .main-nav {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
+
   box-sizing: border-box;
 }
 
@@ -392,14 +398,18 @@ button:focus {
 .section .project {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 0px;
 }
 
 .project-list {
   border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
   box-sizing: border-box;
 
   margin-right: 30px;
   margin-bottom: 30px;
+  width: 370px;
 }
 
 .project-list:nth-child(3n) {
@@ -414,6 +424,7 @@ button:focus {
   font-family: Roboto;
   font-weight: 700;
   font-size: 18px;
+
   line-height: 2;
   letter-spacing: 0.06em;
 }
